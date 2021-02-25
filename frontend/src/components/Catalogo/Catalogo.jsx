@@ -14,13 +14,19 @@ export const Catalogo = ({match}) => {
 
     const [products, setProducts] = useState();
 
+    const [loading, setLoading] = useState(true);
+
     const location = useLocation();
     let prop = products; //Variable will be replaced depending on URL | La variable se reemplazará según la URL
 
+    
     useEffect(() => {
-        fetch(`http://localhost:3001/api/search${location.search}`)
+        
+        fetch(`https://mono-backend.herokuapp.com/api/search${location.search}`)
         .then(res => res.json())
         .then(res => setProducts(res))
+        .then(() => setLoading(false))
+        // eslint-disable-next-line
     }, []);
 
     //Copy of products | Copia de products
@@ -40,6 +46,8 @@ export const Catalogo = ({match}) => {
 
         case "mayor": prop = productsCopy && productsCopy.reverse();
             break;
+
+        default: break;
     };
 
     //Filter by condition | Filtro por condición
@@ -63,6 +71,8 @@ export const Catalogo = ({match}) => {
             
         case "pick up": prop = pickUp;
             break;
+
+        default: break;
     };
 
     //Pagination | Paginación
@@ -84,8 +94,6 @@ export const Catalogo = ({match}) => {
     if (location.pathname === `/search/${match.params.sort}/${match.params.page}`) {
         prop = pagination[match.params.page]
     };
-
-    console.log(window.location)
         
     //Price format | Formato de precio
     products && products.forEach(e => {
@@ -110,15 +118,26 @@ export const Catalogo = ({match}) => {
                     />
                 </div>
                 <div className="col-md-8">
-                    <Results
-                        products={prop}
-                    />
+                    {
+                        loading //Loading spinner | Spinner de carga
+                            ? <div className="d-flex justify-content-center align-items-center h-100">
+                                <div className="spinner-border text-warning" role="status">
+                                    <span className="visually-hidden"></span> 
+                                </div>
+                            </div>
+                            : <Results
+                                products={prop}
+                            />
+                    }
                 </div>
             </div>
-            <div className="row d-flex justify-content-center">
-                <Pagination 
-                    pagination={pagination}
-                />
+            <div className="row d-flex justify-content-center w-100">
+                {
+                    prop && prop.length !== 0 && // If there no products doesn't show pagination | Si no hay productos no muestra paginación
+                        <Pagination 
+                            pagination={pagination}
+                        />
+                }
             </div>
             <div className="row footer">
                 <Footer />

@@ -29,6 +29,7 @@ export const SearchBar = () => {
                 type="text"
                 placeholder="Ingresa tu busqueda..."
                 onChange={handleChange}
+                autoComplete="off"
                 id="input"
             />
             <input

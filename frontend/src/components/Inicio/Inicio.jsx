@@ -53,6 +53,7 @@ export const Inicio = () => {
                     src="/monkey-img.png" 
                     alt="img" 
                     id="img"
+                    draggable="false"
                 />
             </div>
 

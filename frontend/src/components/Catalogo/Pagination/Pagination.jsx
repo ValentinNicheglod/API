@@ -11,21 +11,21 @@ export const Pagination = ({pagination}) => {
     return(
 
         <nav aria-label="Page navigation example">
-            <ul class="pagination">
+            <ul className="pagination">
 
-                <li class="page-item">
+                <li className="page-item">
                     <a 
-                        class="page-link" 
+                        className="page-link" 
                         href={`/search/${sort}/${parseInt(page) > 1 ? parseInt(page) -1 : parseInt(page)}${filter ? `/${filter}` : ""}${location.search}`}
                     >
                         Anterior
                     </a>
                 </li>
 
-                {keys && keys.map(e =>
-                    <li class="page-item">
+                {keys && keys.map((e, i) =>
+                    <li className="page-item" key={i}>
                         <a 
-                            class="page-link" 
+                            className="page-link" 
                             href={`/search/${sort}/${parseInt(e)}${filter ? `/${filter}` : ""}${location.search}`}
                         >
                             {e}
@@ -33,9 +33,9 @@ export const Pagination = ({pagination}) => {
                     </li>    
                 )}
 
-                <li class="page-item">
+                <li className="page-item">
                     <a 
-                        class="page-link" 
+                        className="page-link" 
                         href={`/search/${sort}/${parseInt(page) < keys.length ? parseInt(page) +1 : parseInt(page)}${filter ? `/${filter}` : ""}${location.search}`}
                     >
                         Siguiente
