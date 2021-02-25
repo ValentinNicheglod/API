@@ -129,15 +129,15 @@ export const Catalogo = ({match}) => {
                                 products={prop}
                             />
                     }
+                    <div className="row d-flex justify-content-center w-100">
+                        {
+                            prop && prop.length !== 0 && // If there no products doesn't show pagination | Si no hay productos no muestra paginación
+                                <Pagination 
+                                    pagination={pagination}
+                                />
+                        }
+                    </div>
                 </div>
-            </div>
-            <div className="row d-flex justify-content-center w-100">
-                {
-                    prop && prop.length !== 0 && // If there no products doesn't show pagination | Si no hay productos no muestra paginación
-                        <Pagination 
-                            pagination={pagination}
-                        />
-                }
             </div>
             <div className="row footer">
                 <Footer />
