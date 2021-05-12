@@ -61,12 +61,3 @@ Barra de busqueda, se encarga de traer las respuestas desde el backend utilizand
 #### Contenedores
 ###### Catalogo
 Catalogo contiene los componentes `NavBar`, `Filter`, `Results`, `Pagination` y `Footer`.
-
-## ¿Como correr el proyecto?
-1. Abrir el bash de git en la carpeta en la que se quiera clonar el repositorio.
-2. Ejecutar `git clone https://github.com/ValentinNicheglod/MONO.git`.
-3. Esperar que la tarea haya finalizado.
-4. Ejecutar `npm install` en las carpetas *frontend* y *backend*.
-5. Esperar que se instalen las dependencias.
-6. Una vez instaladas, ejecutar `npm start` en las carpetas *frontend* y *backend*.
->Puede visualizar el proyecto en [localhost:3000](https://localhost:3000)
