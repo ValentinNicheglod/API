@@ -1,6 +1,23 @@
-# MONO Store
-## Descripción del proyecto
-El proyecto es un prototipo de un e-commerce con datos traidos desde una [API de Mercado Libre](https://api.mercadolibre.com/sites/MLA/search?q={query})
+# MONO
+
+Proyecto personal realizado con react para Henry Labs, es un sitio de e-commerce que utiliza los recursos de una API de Mercado Libre, se pueden ordenar y filtrar productos por condición y tipo de envío.
+
+
+## 📋 Datos del proyecto...
+
+✔️❌ **Estado:** Finalizado
+
+📅⏰ **Fecha de comienzo y finalización:** 12/2020 - 12/2020
+
+🔣⌨️ **Lenguajes utilizados:** Javascript
+
+👨🏻‍💻 📋 **Tecnologías utilizadas:** Bootstrap, Express, JWT, Material UI, Multer, Passport, PostgreSQL, **React**, Redux, Sequelize.
+
+💻📱 **Tipo:** Página web
+
+
+
+## 📎 Descripción del proyecto...
 ### Backend
 Se usa el siguiente endpoint de Mercado Libre https://api.mercadolibre.com/sites/MLA/search?q={query}. 
 Recibe un queryString con el parámetro `q` con un string que indica el keyword a buscar. La API retorna un JSON con la siguiente forma:
@@ -45,7 +62,7 @@ Filter se encarga de mostrar las opciones de filtrado y ordenamiento en el cáta
 ###### Footer
 Footer con información.
 ###### Inicio
-Componente que se muestra al abrir la página.
+Componente principal que se muestra al abrir la página.
 ###### NavBar
 Barra de navegación.
 ###### Pagination
@@ -60,4 +77,19 @@ Barra de busqueda, se encarga de traer las respuestas desde el backend utilizand
 
 #### Contenedores
 ###### Catalogo
-Catalogo contiene los componentes `NavBar`, `Filter`, `Results`, `Pagination` y `Footer`.
+Catalogo contiene los componentes `NavBar`, `Filter`, `Results`, `Pagination` y `Footer` y se encargá de la mayoría de la lógica de la página.
+
+
+
+## 🖼️ Imágenes del proyecto...
+> Inicio.
+![inicio](https://user-images.githubusercontent.com/67331469/119192122-faf0be80-ba55-11eb-8d99-d0af08580afc.jpg)
+
+
+> Catalogo.
+![catalogo](https://user-images.githubusercontent.com/67331469/119192114-f926fb00-ba55-11eb-843b-849367900e51.jpg)
+
+
+> Catalogo con filtros.
+![catalogo-filtro](https://user-images.githubusercontent.com/67331469/119192118-f9bf9180-ba55-11eb-8e9f-17fbea5a30d6.jpg)
+
