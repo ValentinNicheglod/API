@@ -1,4 +1,5 @@
 # MONO
+<img src="https://user-images.githubusercontent.com/67331469/119239521-07d9e480-bb20-11eb-8799-b9a14873f39c.png" width="100%"/>
 
 Proyecto personal realizado con react para Henry Labs, es un sitio de e-commerce que utiliza los recursos de una API de Mercado Libre, se pueden ordenar y filtrar productos por condición y tipo de envío.
 
