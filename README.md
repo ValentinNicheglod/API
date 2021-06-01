@@ -12,7 +12,7 @@ Proyecto personal realizado con react para Henry Labs, es un sitio de e-commerce
 
 🔣⌨️ **Lenguajes utilizados:** Javascript
 
-👨🏻‍💻 📋 **Tecnologías utilizadas:** Bootstrap, Express, JWT, Material UI, Multer, Passport, PostgreSQL, **React**, Redux, Sequelize.
+👨🏻‍💻 📋 **Tecnologías utilizadas:** Bootstrap, Express, Material UI, **React**.
 
 💻📱 **Tipo:** Página web
 
