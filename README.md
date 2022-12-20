@@ -1,5 +1,6 @@
 # Mono
-<img src="https://user-images.githubusercontent.com/67331469/119239521-07d9e480-bb20-11eb-8799-b9a14873f39c.png" width="100%"/>
+
+<img src="https://user-images.githubusercontent.com/67331469/208757791-dbb1471a-7e63-4830-866b-4cde36ad3636.png" width="100%"/>
 
 Proyecto personal realizado con react para Henry Labs, es un sitio de e-commerce que utiliza los recursos de una API de Mercado Libre, se pueden ordenar y filtrar productos por condición y tipo de envío.
 
@@ -84,13 +85,7 @@ Catalogo contiene los componentes `NavBar`, `Filter`, `Results`, `Pagination` y 
 
 ## 🖼️ Imágenes del proyecto...
 > Inicio.
-![inicio](https://user-images.githubusercontent.com/67331469/119192122-faf0be80-ba55-11eb-8d99-d0af08580afc.jpg)
-
+![Mono  (3)](https://user-images.githubusercontent.com/67331469/208760284-47173e33-0598-4b53-8ccb-23ebfd284cd4.png)
 
 > Catalogo.
-![catalogo](https://user-images.githubusercontent.com/67331469/119192114-f926fb00-ba55-11eb-843b-849367900e51.jpg)
-
-
-> Catalogo con filtros.
-![catalogo-filtro](https://user-images.githubusercontent.com/67331469/119192118-f9bf9180-ba55-11eb-8e9f-17fbea5a30d6.jpg)
-
+![Mono  (4)](https://user-images.githubusercontent.com/67331469/208760357-682cda9d-32c7-438c-bc90-8d6c0ff2d660.png)
